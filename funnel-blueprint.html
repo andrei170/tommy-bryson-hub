@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint · For Ravi · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Ravi Wadan by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint · For Ravi">
+<meta property="og:description" content="Part of the updated 3-thing plan and less-than-7-day install built for @raviwadan by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Ravi · AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - Tommy Bryson</h1>
+  </header>
+
+  
+<p><strong>Built:</strong> 2026-05-16
+<strong>Frame:</strong> Full funnel architecture for The Long Term Mentorship, with two parallel tracks (Build The First Passive Income Line + Stack The Income Lines), feeding the productised free-call-as-application surface, with the $249 Simple Budget Course staying in place as the entry-level tier and Patreon repositioned as the community lane.</p>
+<hr />
+<h2>Funnel at a glance</h2>
+<pre><code>TOP OF FUNNEL
+  Free content
+    YouTube long-form (2-3 / week) - the dominant discovery surface
+    YouTube Shorts (4-6 / week)
+    IG reels and carousels (4-5 / week)
+    TikTok re-uploads
+    Facebook re-posts
+    Spotify podcast (low cadence, secondary asset)
+
+MIDDLE OF FUNNEL (the new layer)
+  Scorecard: &quot;How Close Are You To Your First Passive Income Line?&quot;
+    12 questions, 90-second completion
+    Captures email, segments by passive-income revenue band
+  Email nurture (5-email cold-first-touch sequence)
+    Score-band-driven branching
+    Routes to cohort application (Track A or Track B)
+    Or to the $249 Simple Budget Course (Teachable, entry tier)
+
+ENTRY TIER (already live, stays in place)
+  $249 Simple Budget Course (Long Term Team on Teachable)
+    Three video testimonials + one named-customer text testimonial on the landing
+    Functions as the cash-flow foundation prerequisite
+    Routes graduates into cohort application
+
+CONVERSION LAYER (the cohort)
+  Cohort landing page (The Long Term Mentorship)
+    Track A: Build The First Passive Income Line (mid-four-figure, 8 weeks, caps at 25)
+    Track B: Stack The Income Lines (lower-four-figure, 6 weeks, caps at 30)
+  Typeform application (uTtFirS4)
+  Application review + manual approval
+  Free-call hook lives as the post-application consult step
+
+POST-CONVERSION
+  Cohort delivery
+    Weekly live call with Tommy
+    Office hours
+    Private cohort room (Circle or Slack)
+    1:1 plan review at week 8 (Track A) or week 6 (Track B)
+  Graduation
+    Track A grads: alumni room, first-line accountability cohort, referral program
+    Track B grads: line-stacking office hours quarterly, 1:1 slot discount
+
+COMMUNITY LANE (Patreon, repositioned)
+  Existing £2.50 / month tier
+    Stays as the entry-level community access
+    Cohort alumni roll into it at no additional cost
+  New paid mid-tier (around £15 / month)
+    For non-cohort viewers wanting deeper content access
+    Monthly deep-dive post + members-only Q+A
+
+TOP OF LADDER (post-Day-90, optional)
+  Mastermind / 1:1 retainer for cohort grads at $5K+
+  Annual operator summit (Day-180+ if cohort proves)
+</code></pre>
+<h2>Stage-by-stage detail</h2>
+<h3>Stage 1 - Top of funnel</h3>
+<p><strong>Surfaces:</strong> YouTube long-form (the dominant), YouTube Shorts, IG reels, IG carousels, TikTok, Facebook page, Spotify podcast.</p>
+<p><strong>Goal:</strong> Pull warm audience attention into the funnel via a single converting asset.</p>
+<p><strong>Mechanics:</strong> Every piece of content includes one and only one CTA: the scorecard. Not the cohort. Not the $249 course. Not Patreon. The scorecard. The reason: it is the lowest-friction step, and it captures the asset (the email) that all subsequent conversion depends on.</p>
+<p><strong>Tracking:</strong> UTM-tagged scorecard links from every YouTube end-screen card, every YouTube description, every IG bio link, every reel description, every Facebook post, every TikTok bio. Plausible or GA4 on the scorecard page, segmented by source.</p>
+<h3>Stage 2 - Scorecard ("How Close Are You To Your First Passive Income Line?")</h3>
+<p><strong>Format:</strong> 12 questions, four dimensions (cash flow / foundation / first line / operator inputs), 90 seconds to complete.</p>
+<p><strong>Output:</strong> 0-100 readiness score, top-three-gaps summary, email-captured score report.</p>
+<p><strong>Tool stack options:</strong></p>
+<ul>
+<li>ScoreApp (purpose-built for scorecard quizzes, native scoring engine)</li>
+<li>Typeform (consistent with the cohort application form)</li>
+<li>Outgrow (alternative with more design flexibility)</li>
+</ul>
+<p><strong>Email integration:</strong> scoring tool pushes email + score band + top-three-gap tags to the ESP. Quiz completion triggers the score-report email + entry into the nurture sequence.</p>
+<p><strong>Segmentation tags applied:</strong></p>
+<ul>
+<li>Score band: 0-40 (foundation-stage), 41-70 (first-line-in-build), 71-100 (income-stacking)</li>
+<li>Passive-income revenue band: zero / first-line-in-build / first-line-earning / multi-line</li>
+<li>Income-stage: under-$50K / $50K-$100K / $100K-$200K / over-$200K (annual income, optional self-select)</li>
+<li>Operator-inputs band: hours-per-week available (under-5 / 5-to-10 / over-10), capital available (under-$5K / $5K-$25K / over-$25K)</li>
+</ul>
+<h3>Stage 3 - Email nurture (5-email cold-first-touch sequence)</h3>
+<p><strong>Cadence:</strong> Days 0, 2, 5, 8, 12 from quiz completion.</p>
+<p><strong>Routing:</strong> the sequence is delivered to all completions. The CTA in the final email is conditional on score band - low scores route to Track A (foundation), middle-to-high scores route to Track B (stacking), or to a "both might fit" follow-up that lets the lead self-select.</p>
+<p><strong>Detail of the sequence lives in <a href="email-sequence.html">email-sequence</a>.</strong></p>
+<h3>Stage 4 - Cohort landing page</h3>
+<p><strong>Surfaces:</strong></p>
+<ul>
+<li>Combined cohort landing (Track A + Track B side by side) - the primary</li>
+<li>Track-specific deep links once the cohort proves conversion - split into two surfaces in cycle 2 or 3</li>
+</ul>
+<p><strong>Build choice (for the demo):</strong> ship one combined cohort landing that holds both tracks side-by-side. The post-install version splits into two surfaces once we know which track pulls harder.</p>
+<p><strong>Hero element:</strong> for the demo, a placeholder card stating "Cohort intro VSL embeds on Day 1 of install" - because the production VSL has not been filmed yet. Production version swaps to either (a) a 90-second cohort-intro VSL filmed Day 1-3 of the install, or (b) an embed of his single highest-watched YouTube long-form via the standard YouTube embed protocol.</p>
+<p><strong>Conversion gate:</strong> Typeform application (uTtFirS4). Application reads as: which track, current income stage, current liquid savings band, current passive-income revenue band, why now. Manual review on submit, approval triggers a Stripe or Stan store payment link.</p>
+<h3>Stage 5 - Application + checkout</h3>
+<p><strong>Flow:</strong></p>
+<ol>
+<li>Applicant submits Typeform</li>
+<li>Submission routes to Zapier or Make.com webhook</li>
+<li>Webhook fires three actions:
+   - Creates contact record in ConvertKit / Customer.io / GHL (chosen CRM)
+   - Tags contact with cohort track + passive-income revenue band + operator-inputs band
+   - Adds applicant to a #cohort-review Slack channel for manual review (Tommy or his ops contact reviews inside 48 hours)</li>
+<li>On approval, applicant receives either (a) a direct payment link via email, or (b) a calendar invite to the existing free call (now repositioned as the post-application consult for the high-readiness applicants who want to talk before paying)</li>
+<li>Payment triggers:
+   - Cohort welcome email with calendar invite to first call
+   - Add to private cohort room (Circle or Slack)
+   - Add to cohort-active segment in ESP for in-cohort comms</li>
+</ol>
+<h3>Stage 6 - Cohort delivery</h3>
+<p><strong>Track A - Build The First Passive Income Line (8 weeks):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Focus</th>
+<th>Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Income audit + cash-flow stabilisation</td>
+<td>Written income audit, savings-rate target set</td>
+</tr>
+<tr>
+<td>2</td>
+<td>First $1K saved-and-protected</td>
+<td>High-yield account opened, first deposit, separation from operating cash</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Brokerage account + first asset category</td>
+<td>Brokerage account opened, first deposit. General category review only (no specific stock picks)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>First side-income line selection</td>
+<td>Three categories reviewed (digital product / rental / cash-flowing skill), one selected and scoped</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Build week one - the side-income line</td>
+<td>First version of the side-income line in market or under construction</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stabilisation + first earning milestone</td>
+<td>First non-9-to-5 dollar earned or first dividend posted to the brokerage</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Compounding plan + 90-day execution writeup</td>
+<td>Written 90-day post-cohort execution plan reviewed on live call</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1:1 plan review with Tommy</td>
+<td>Written 12-month execution plan, accountability stack locked</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Track B - Stack The Income Lines (6 weeks):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Focus</th>
+<th>Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Line-two selection + scope</td>
+<td>Second income-line category selected, scoped against operator inputs</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Portfolio construction across paper and cash-flow assets</td>
+<td>Written portfolio allocation across general asset categories (no specific picks)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tax-efficiency basics for the multi-line operator</td>
+<td>Tax-bucket structure mapped, accounting workflow reviewed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Plateau diagnostics ($5K / mo to $15K / mo)</td>
+<td>Written plateau audit, three intervention levers identified</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Build week - the plateau intervention</td>
+<td>Specific plateau intervention installed (price uplift, additional channel, second product)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1:1 plan review (lighter version)</td>
+<td>60-day post-cohort execution plan</td>
+</tr>
+</tbody>
+</table>
+<h3>Stage 7 - Post-graduation</h3>
+<p><strong>Track A grads:</strong></p>
+<ul>
+<li>Alumni room (ongoing access to monthly Q+A with Tommy)</li>
+<li>First-line accountability cohort (alumni post their side-income line progress and dividend deposits weekly for 90 days post-graduation)</li>
+<li>Referral program for incoming Track A cycles (alumni get cohort-credit for referrals that convert)</li>
+</ul>
+<p><strong>Track B grads:</strong></p>
+<ul>
+<li>Line-stacking office hours quarterly (cohort grads can bring a live portfolio question for a 15-minute review)</li>
+<li>1:1 slot discount for ongoing work</li>
+<li>Annual operator summit invitation (if Day-180+ summit is launched)</li>
+</ul>
+<h2>Tech stack (recommended starting build)</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Tool</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scorecard quiz</td>
+<td>ScoreApp or Typeform</td>
+<td>ScoreApp has native scoring; Typeform is the consistent choice with the application form</td>
+</tr>
+<tr>
+<td>ESP</td>
+<td>ConvertKit or Customer.io</td>
+<td>Either supports the segmentation needs; ConvertKit is the creator-economy default</td>
+</tr>
+<tr>
+<td>Cohort landing</td>
+<td>Static HTML hosted on GitHub Pages or Webflow</td>
+<td>Demo uses static HTML</td>
+</tr>
+<tr>
+<td>Application form</td>
+<td>Typeform (uTtFirS4)</td>
+<td>Standard across AG1 D100 pitches</td>
+</tr>
+<tr>
+<td>Payment / checkout</td>
+<td>Stripe (cohort) + Teachable stays for the $249 entry course</td>
+<td>Stripe handles the cohort tickets; Teachable stays for the entry course</td>
+</tr>
+<tr>
+<td>Cohort room</td>
+<td>Circle, Skool, or private Slack</td>
+<td>Circle is the default for cohort delivery</td>
+</tr>
+<tr>
+<td>CRM</td>
+<td>ConvertKit tags (light) or GoHighLevel (heavier automation)</td>
+<td>GHL if heavier automation needed</td>
+</tr>
+<tr>
+<td>Webhooks</td>
+<td>Zapier or Make.com</td>
+<td>Either works; Make is cheaper at scale</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>Plausible + GA4</td>
+<td>Plausible for shareable dashboards, GA4 for retargeting</td>
+</tr>
+<tr>
+<td>Retargeting pixels</td>
+<td>Meta + YouTube + TikTok</td>
+<td>Pixels firing on every funnel surface</td>
+</tr>
+<tr>
+<td>Community</td>
+<td>Patreon stays for the £2.50 / mo tier + new £15 / mo paid mid-tier</td>
+<td>Patreon repositioned as the community lane, not the back of the funnel</td>
+</tr>
+</tbody>
+</table>
+<h2>Integration points (the load-bearing wiring)</h2>
+<ol>
+<li><strong>Scorecard completion -&gt; ESP entry + tag application.</strong> Single point of failure. If this breaks, the funnel does not capture.</li>
+<li><strong>Email nurture -&gt; cohort landing CTA -&gt; Typeform.</strong> Typeform fires a webhook on submit.</li>
+<li><strong>Typeform webhook -&gt; CRM + Slack review channel + status: pending-review.</strong></li>
+<li><strong>Manual approval -&gt; Stripe payment link -&gt; Stripe webhook -&gt; cohort onboarding email + Circle invite + status: enrolled.</strong></li>
+<li><strong>Cohort completion -&gt; alumni status -&gt; ongoing comms segment.</strong></li>
+</ol>
+<p>Every transition is webhook-driven, every transition is logged, every transition is monitored for failure with email alerts to Tommy's ops contact.</p>
+<h2>Install phasing</h2>
+<p><strong>Days 1-3 - Core funnel install:</strong></p>
+<ul>
+<li>Cohort landing page deployed (single combined page, both tracks)</li>
+<li>Typeform application live with webhook (uTtFirS4)</li>
+<li>Stripe products created for Track A and Track B</li>
+<li>Brand colours locked (one of the small Day-1 fixes)</li>
+</ul>
+<p><strong>Days 4-7 - Capture + nurture layer:</strong></p>
+<ul>
+<li>Scorecard quiz built and live on its own subdomain</li>
+<li>5-email cold-first-touch nurture sequence loaded into ESP</li>
+<li>Tag-driven segmentation logic live</li>
+<li>Pixel + GA4 firing on all surfaces</li>
+<li>UTM tagging convention documented and rolled out across YouTube end-screens, IG bio, Facebook, TikTok, Linktree</li>
+</ul>
+<p><strong>Days 8-30 - Cohort launch:</strong></p>
+<ul>
+<li>Track A cohort 1 application window opens</li>
+<li>Linktree updated: cohort landing replaces "free call" link as the primary, scorecard as the secondary capture surface</li>
+<li>Inbound leads worked through nurture</li>
+<li>First cohort fills, starts week 1 by Day 30</li>
+<li>Free-call hook continues as the post-application consult for high-readiness applicants</li>
+</ul>
+<p><strong>Days 30-90 - Scale + iterate:</strong></p>
+<ul>
+<li>Track B cohort 1 launches</li>
+<li>Patreon repositioning: £15 / mo paid mid-tier introduced, £2.50 / mo tier stays</li>
+<li>Ad spend (Meta + YouTube + TikTok) starts on top-performing organic clips</li>
+<li>Cohort 2 (Track A) waitlist opens</li>
+</ul>
+<h2>What this funnel is not</h2>
+<ul>
+<li><strong>Not a course launch.</strong> No 7-day launch sequence, no countdown timer, no $97 evergreen tripwire (the $249 Simple Budget Course on Teachable already serves that role and stays in place). Cohort-anchored, quarterly cadence, capped enrolment.</li>
+<li><strong>Not a paid-ads-first build.</strong> Organic warm traffic from the existing 590K YouTube + 24K IG audience carries the first 2-3 cohort fills. Paid spend joins after the funnel has proven conversion at cold-to-warm rates.</li>
+<li><strong>Not a $249-budget-course replacement.</strong> The cohort is upstream of the budget course in the income trajectory but sits at a higher price point with live access. Budget course stays, cohort sits above it.</li>
+<li><strong>Not a regulated investment service.</strong> The cohort teaches general financial education and operator coaching. It does not provide personalised investment, tax, or legal advice. Not investment advice. Results vary by capital, market, and operator execution.</li>
+</ul>
+<h2>Free-call repositioning sequence</h2>
+<p>The free-call hook is currently the deepest point of the funnel with no productised next step. The repositioning sequence:</p>
+<ol>
+<li>Build the Typeform application (uTtFirS4) as the new cohort-application gate</li>
+<li>Connect the Typeform to ConvertKit / Customer.io (or chosen ESP) so every submission tags the contact</li>
+<li>Build the cohort landing as the new bio-link primary (replacing the free-call hook)</li>
+<li>Repurpose the free call as the post-application consult step - approved applicants who want to talk before paying get the free-call slot</li>
+<li>Fire the Stripe + GA4 + Meta pixel onto the cohort landing</li>
+<li>Update YouTube end-screens, YouTube descriptions, IG bio, Facebook page, TikTok bio, and the Linktree to route to the scorecard first, the cohort landing second</li>
+</ol>
+<p>Total install time on the free-call repositioning: 2-3 days, parallel to the cohort landing and the scorecard.</p>
+<h2>Compliance footer (regulated-niche)</h2>
+<p>Every funnel surface, every email, every public-facing asset in this package carries the line: "Not investment advice. Results vary by capital, market, and operator execution." The cohort is general financial education and operator coaching. It does not provide personalised investment, tax, or legal advice. Outcome language is anchored to deliverables (income audit complete, first $1K saved-and-protected, first brokerage account opened, written 12-month execution plan), not income claims for the participant.</p>
+
+  <footer class="doc-footer">
+    <a href="index.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-05-02 &middot; Built for @raviwadan</div>
+  </footer>
+</article>
+
+</body>
+</html>
